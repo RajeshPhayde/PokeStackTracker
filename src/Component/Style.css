@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+.main-page{
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+}
+.left-content, .right-content{
+    flex-basis: 50%;
+}
+.left-content{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 290px)); */
+    grid-template-columns: auto auto;
+    grid-gap: 32px;
+}
+.card{
+    width: 300px;
+    background-color: rgb(52, 224, 216);
+    border-radius: 16px;
+    box-shadow: 0 5px 5px black;
+    padding: 0  24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.right-content{
+    width: 40%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 90px;
+    right: 10px;
+}
+.right-content img{
+    margin: 16px;
+    height: 200px;
+}
+.right-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.abilities{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+.abilities .group{
+    background-color: crimson;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 8px;
+}
+.base-state{
+    margin-top: 32px ;
+}
+.btn-group{
+    display: flex;
+}
+.btn-group button{
+    outline: none;
+    border: none;
+    width: 100px;
+    padding: 4px 0;
+    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    background-color: crimson;
+    border-radius: 8px;
+}
+
+/* -----------------------SIGNUP------------------------- */
+section{
+  width: 100vw;
+  height: 100vh;
+  background: url(Image/team.jpg) no-repeat;
+  background-size: cover;
+}
+.account{
+    /* backdrop-filter: blur(3px); */
+    border: none;
+    box-shadow: white 0px 0px 20px;
+    border-radius: 15px;
+    width: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: relative;
+    padding: 10px 0px;
+  }
+  .account h1{
+    font-family: 'Sacramento', cursive;
+    display: inline-block;
+    color: rgb(202, 17, 119);
+    text-shadow: 1px 1px 1px rgb(116, 212, 236);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #inp{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(245, 238, 238, 0.534);
+    box-shadow: white 0px 0px 4px;
+    margin: 10px auto;
+    display: block;
+    font-size: large;
+    text-align: center;
+    transition: 0.7s;
+  }
+  #inp:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+  #inp:focus{
+    border: none;
+    outline: 2px solid transparent;
+    /* box-shadow: rgb(130, 130, 243) 0px 0px 10px; */
+    box-shadow: transparent 0px 0px 10px;
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  
+  #submit{
+    color: #0f3e62;
+    width: 120px;
+    height: 38px;
+    border-radius: 10px;
+    margin: 10px auto;
+    margin-left: 150px;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+  }
+  #submit:hover{
+    background: #0f3e62 ;
+    color: white;
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+  .account form span a{
+    display: block;
+    margin: 0px 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: larger;
+    transition: 0.6s;
+  }
+  .account form span a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  #pwd-mis{
+    color: red;
+    font-weight: 500;
+    margin-left: 90px;
+  }
+  .verify-btn{
+    color: #0f3e62;
+    width: 120px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px auto;
+    margin-right: 15px;
+    font-size: medium;
+    font-weight: 700;
+    transition: 0.3s;
+    position: absolute;
+    bottom: 58px;
+    left: 60px;
+  }
+  .verify-btn:hover{
+    background: #0f3e62 ;
+    color: white;
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+
+  /* ------- ----- Nav  ------- ----- */
+  
+  nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(200px);
+    z-index: 100;
+  }
+  nav h1{
+    font-size: 30px;
+    font-family: cursive;
+    color: #570785;
+  }
+  nav button{
+    color: #0f3e62;
+    width: 120px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+    border: none;
+    transition: 0.3s;
+  }
+  nav button:hover{
+    background: #0f3e62 ;
+    color: white;
+    transform: scale(1.08);
+    transition: 0.3s;
+  }
+
+/* --------- Media query -------*/
+@media (max-width: 1140px){
+  section{
+    background: url(Image/pika.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .left-content{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 32px;
+  }
+  .right-content{
+    position: fixed;
+    top: 120px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 750px){
+  .container{
+    width: 90%;
+    margin: auto;
+    padding: 100px 30px;
+    display: flex;
+}
+  .left-content{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 32px;
+  }
+  .card{
+    width: 250px;
+    padding: 0  10px;
+  }
+  .right-content{
+    position: fixed;
+    top: 120px;
+    right: 10px;
+  }
+}
+
+@media (max-width : 640px){
+  .container{
+    width: 90%;
+    margin: auto;
+    padding: 100px 10px;
+    background-color: antiquewhite;
+    background-size: cover;
+}
+
+.left-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    position: relative;
+    top: 600px;
+    background-color: antiquewhite;
+}
+.card{
+    width: 250px;
+    padding: 0  9px;
+}
+.right-content{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: absolute;
+    transform: translate(auto);
+}
+.right-content img{
+    margin: 16px;
+    height: 200px;
+}
+}

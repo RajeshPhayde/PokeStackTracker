@@ -62,6 +62,7 @@ const Signup = () => {
         }
         else{
             localStorage.setItem("userDetails", JSON.stringify(user))
+            n("/");
         }
     }
 

@@ -246,9 +246,11 @@ section{
 /* --------- Media query -------*/
 @media (max-width: 1140px){
   section{
-    background: url(Image/pika.jpg);
+    background: url(Image/PikaReflect.jpg) no-repeat;
     background-size: cover;
+    /* background-position: -250px -300px; */
     background-position: center;
+    backdrop-filter: blur(15px);
   }
   .left-content{
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));

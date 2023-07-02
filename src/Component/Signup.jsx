@@ -82,7 +82,7 @@ const Signup = () => {
 
                 <input id="submit" type="submit" value="Signup" disabled={verified==false ? true : false}/>
                 <br />
-                <span style={{color : "red" ,fontWeight : 700 , fontSize : "large"}}>Already have an account? 
+                <span style={{color : "white" ,fontWeight : 700 , fontSize : "large"}}>Already have an account? 
                     <Link to="/"><span style={{color : "white"}}>Sign in</span></Link>
                 </span> 
                 </form>

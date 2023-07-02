@@ -296,7 +296,7 @@ section{
 
 .left-content{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
     grid-gap: 25px;
     position: relative;
     top: 600px;

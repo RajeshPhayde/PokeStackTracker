@@ -39,7 +39,6 @@ const Signup = () => {
             setverified(true);
             alert("Email verified...!");
         }, 2000)
-
     }
 
     let handleSignup = (e)=>{
@@ -53,7 +52,7 @@ const Signup = () => {
             password : pwd.current.value,
             phone : phone.current.value
         }
-
+        
         if(pwd.current.value != confirmPwd.current.value)
         {
             setWrongpass(true);
@@ -74,7 +73,10 @@ const Signup = () => {
                 <input id="inp" type="text" placeholder="Enter Username" required ref={uname}/>
                 <input id="inp" type="email" placeholder="Enter email id" required ref={mail}/>
                 <input id="inp" type="password" placeholder="Enter Password" required ref={pwd}/>
-                <input id="inp" type="password" placeholder="Re-Enter Password" required ref={confirmPwd}/>
+                <input id="inp" 
+                    type="password" placeholder="Re-Enter Password" 
+                    required ref={confirmPwd} 
+                    onChange={()=>{setWrongpass(false)}}/>
                 {wrongpass && <span id="pwd-mis">*** Password Missmatch</span>}
                 <input id="inp" type="tel" minLength={10} maxLength={10} placeholder="Enter Contact number" required ref={phone}/>
 

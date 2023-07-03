@@ -50,7 +50,10 @@ const Main = () => {
             </nav>
             <div className="container">
                 <div className="left-content">
-                    <Card pokemon={pokeData} loading={loading} infoPokemon={poke => { setPokedex(poke) }} />
+                    <Card pokemon={pokeData} 
+                          loading={loading} 
+                          onClick = {window.scrollTo(0,0)}
+                          infoPokemon={poke => { setPokedex(poke) }} />
                     <div className="btn-group">
                         {prevUrl && <button onClick={() => {
                             setPokeData([])
